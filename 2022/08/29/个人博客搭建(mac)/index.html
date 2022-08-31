@@ -16,12 +16,12 @@
   <meta name="author" content="Xiang ji">
   <meta name="keywords" content="">
   
-    <meta name="description" content="记载博客的搭建，使用Hexo+Github 详细流程配置环境以下环境依次安装 需按顺序在终端中安装，homebrew要提前装好，一般为在终端输入： 1&#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;HEAD&#x2F;install.sh)&quot;  更详细见官网：https:&#x2F;&#x2F;bre">
+    <meta name="description" content="记载博客的搭建，使用Hexo+Github 详细流程 配置环境 以下环境依次安装 需按顺序在终端中安装，homebrew要提前装好，一般为在终端输入： 1&#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;HEAD&#x2F;install.sh)&quot; 更详细见官网：https:&#x2F;&#x2F;br">
 <meta property="og:type" content="article">
 <meta property="og:title" content="个人博客搭建（mac）">
 <meta property="og:url" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/index.html">
 <meta property="og:site_name" content="Xiang Ji&#39;s Blog">
-<meta property="og:description" content="记载博客的搭建，使用Hexo+Github 详细流程配置环境以下环境依次安装 需按顺序在终端中安装，homebrew要提前装好，一般为在终端输入： 1&#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;HEAD&#x2F;install.sh)&quot;  更详细见官网：https:&#x2F;&#x2F;bre">
+<meta property="og:description" content="记载博客的搭建，使用Hexo+Github 详细流程 配置环境 以下环境依次安装 需按顺序在终端中安装，homebrew要提前装好，一般为在终端输入： 1&#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;HEAD&#x2F;install.sh)&quot; 更详细见官网：https:&#x2F;&#x2F;br">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/1.png">
 <meta property="og:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/2.png">
@@ -31,7 +31,7 @@
 <meta property="og:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/6.png">
 <meta property="og:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/7.png">
 <meta property="article:published_time" content="2022-08-29T00:04:16.000Z">
-<meta property="article:modified_time" content="2022-08-31T02:32:14.166Z">
+<meta property="article:modified_time" content="2022-08-31T04:59:27.647Z">
 <meta property="article:author" content="Xiang ji">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/1.png">
@@ -89,11 +89,119 @@
 
 
   
-<!-- hexo injector head_end start -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<meta name="generator" content="Hexo 6.2.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.2.0"></head>
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 
 <body>
@@ -230,7 +338,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          6.9k 字
+          6.6k 字
         
       </span>
     
@@ -241,7 +349,7 @@
         
         
         
-          58 分钟
+          55 分钟
         
       </span>
     
@@ -285,192 +393,193 @@
               <div class="markdown-body">
                 
                 <p>记载博客的搭建，使用Hexo+Github</p>
-<h1 id="详细流程"><a href="#详细流程" class="headerlink" title="详细流程"></a>详细流程</h1><h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><p><strong>以下环境依次安装</strong></p>
+<h1 id="详细流程">详细流程</h1>
+<h2 id="配置环境">配置环境</h2>
+<p><strong>以下环境依次安装</strong></p>
 <p>需按顺序在终端中安装，homebrew要提前装好，一般为在终端输入：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;<br></code></pre></td></tr></table></figure>
-
-<p>更详细见官网：<a target="_blank" rel="noopener" href="https://brew.sh/">https://brew.sh</a> ，或者寻找教程。</p>
+<p>更详细见官网：https://brew.sh ，或者寻找教程。</p>
 <p>1:安装Node.js</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">brew install node<br></code></pre></td></tr></table></figure>
-
 <p>2:安装Git</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">brew install git<br></code></pre></td></tr></table></figure>
-
 <p>3:安装hexo</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">npm install -g hexo-cli<br></code></pre></td></tr></table></figure>
-
-<h2 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h2><p>桌面新建文件夹 Blog</p>
+<h2 id="搭建博客">搭建博客</h2>
+<p>桌面新建文件夹 Blog</p>
 <p>进入blog文件夹：<code>cd Desktop/Blog</code></p>
 <p>初始化：<code>hexo init</code></p>
-<p>启动hexo：<code>hexo s</code>  (<code>hero start</code>简写)</p>
+<p>启动hexo：<code>hexo s</code> (<code>hero start</code>简写)</p>
 <p>进入博客的默认网站：<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a></p>
 <p>可以见到已经默认生成了一篇博文</p>
-<p>新建一篇博文，终端输）：<code>hexo n &quot;发布第一篇个人博客&quot;</code>  （<code>hexo new</code>简写）</p>
-<p>此时在Desktop&#x2F;Blog&#x2F;sourse&#x2F;_posts 文件夹下可以看到刚刚建立的**”发布第一篇个人博客.md”**的文件</p>
+<p>新建一篇博文，终端输）：<code>hexo n "发布第一篇个人博客"</code> （<code>hexo new</code>简写）</p>
+<p>此时在Desktop/Blog/sourse/_posts 文件夹下可以看到刚刚建立的<strong>"发布第一篇个人博客.md"</strong>的文件</p>
 <p>利用Markdown编辑器可以对内容进行更改，比如输入：内容测试</p>
 <p>终端在在Blog文件下输入：</p>
-<p>清理：<code>hexo c</code>  (<code>hexo clean</code>)<br>生成：<code>hexo g</code>  (<code>hexo generate</code>)<br>启动：<code>hexo s</code>  (<code>hero start</code>)</p>
-<h2 id="与Github同步"><a href="#与Github同步" class="headerlink" title="与Github同步"></a>与Github同步</h2><p>1:新建或登录github账号：<a target="_blank" rel="noopener" href="https://github.com/">https://github.com</a></p>
-<p>2:新创建一个仓库New repository，**仓库名必须为：<code>昵称.github.io</code>**（昵称中有大写字母要全部改为小写）</p>
+<p>清理：<code>hexo c</code> (<code>hexo clean</code>) 生成：<code>hexo g</code> (<code>hexo generate</code>) 启动：<code>hexo s</code> (<code>hero start</code>)</p>
+<h2 id="与github同步">与Github同步</h2>
+<p>1:新建或登录github账号：<a target="_blank" rel="noopener" href="https://github.com/">https://github.com</a></p>
+<p>2:新创建一个仓库New repository，<strong>仓库名必须为：<code>昵称.github.io</code></strong>（昵称中有大写字母要全部改为小写）</p>
 <p>，（可选：输入描述），<strong>选择类型为：Public</strong></p>
-<ol start="3">
+<ol start="3" type="1">
 <li><p>终端中<strong>ctrl+c，退出命令</strong>，退出后默认会依然<strong>在Blog目录下</strong>。在目录下安装git部署插件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure>
-</li>
-<li><p>进入Blog文件夹，找到<strong>“_config.yml”</strong>文件并打开，做如下修改：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure></li>
+<li><p>进入Blog文件夹，找到**“_config.yml”**文件并打开，做如下修改：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs mac"># Deployment<br>## Docs: https://hexo.io/docs/deployment.html<br>deploy:<br>  type: git<br>  repo: https://github.com/username1/username2.github.io.git<br>  branch: master<br></code></pre></td></tr></table></figure></li>
 </ol>
 <p>username1为你的用户名（包含大写）</p>
 <p>username2为大写改为小写的用户名</p>
-<p>也就是说将type改为git，将repo：后内容改为**”仓库网址.git”**。</p>
+<p>也就是说将type改为git，将repo：后内容改为<strong>"仓库网址.git"</strong>。</p>
 <p>仓库网址可以在浏览器上查看。</p>
 <p>在终端Blog目录命令下，利用代码将本地同步到GitHub上：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">hexo d<br></code></pre></td></tr></table></figure>
-
 <p>中间会让输入github账户名与密码，账户名为邮箱，</p>
 <p>密码采取可以采取不同授权方式（在这里我暂时采取了方式一）</p>
 <p>方式一：个人令牌</p>
-<ol>
-<li><p>打开Github个人主页，右击头像，在呼出菜单中选择Settings</p>
-</li>
-<li><p>在左侧菜单中选择Developer settings</p>
-</li>
-<li><p>左侧菜单选择Personal access tokens</p>
-</li>
-<li><p>选择授权时间，授权权限（个人使用方方便的话可以全开）</p>
-</li>
-<li><p>点击Generate Code生成</p>
-</li>
-<li><p>将生成的密钥复制，输入到终端对应需要密码的地方。</p>
-</li>
+<ol type="1">
+<li><p>打开Github个人主页，右击头像，在呼出菜单中选择Settings</p></li>
+<li><p>在左侧菜单中选择Developer settings</p></li>
+<li><p>左侧菜单选择Personal access tokens</p></li>
+<li><p>选择授权时间，授权权限（个人使用方方便的话可以全开）</p></li>
+<li><p>点击Generate Code生成</p></li>
+<li><p>将生成的密钥复制，输入到终端对应需要密码的地方。</p></li>
 </ol>
 <p>方式二：SSH密钥(暂未使用，便不介绍了)</p>
 <p>之后便可以进行同步了。方式一的密钥过期后需要重新生成。</p>
 <p>注意在渲染时要选择正确的分支：</p>
 <p>比如我的文件同步到master分支上，那么渲染时要在master分支上渲染，而默认分支为main，因此需要做一些调整。</p>
-<p><img src="/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/1.png" srcset="/img/loading.gif" lazyload alt="fig1"></p>
-<p><img src="/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/2.png" srcset="/img/loading.gif" lazyload alt="fig2"></p>
-<h3 id="使用主题"><a href="#使用主题" class="headerlink" title="使用主题"></a>使用主题</h3><p>可在这查找主题：**<a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes</a>**</p>
+<figure>
+<img src="/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/1.png" srcset="/img/loading.gif" lazyload alt="fig1"><figcaption aria-hidden="true">fig1</figcaption>
+</figure>
+<figure>
+<img src="/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/2.png" srcset="/img/loading.gif" lazyload alt="fig2"><figcaption aria-hidden="true">fig2</figcaption>
+</figure>
+<h3 id="使用主题">使用主题</h3>
+<p>可在这查找主题：<strong><a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes</a></strong></p>
 <p>在这里我采用的是Fluid主题，使用方式见：</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">https://github.com/fluid-dev/hexo-theme-fluid</a></p>
-<h3 id="使用Latex"><a href="#使用Latex" class="headerlink" title="使用Latex"></a>使用Latex</h3><p>由于多个Math插件不共存，安装确保只安装一种，也就是说仅采取下面一种方式，如果切换实现方式需要卸载就的math插件安装新插件：</p>
-<h4 id="1-hexo-math插件"><a href="#1-hexo-math插件" class="headerlink" title="1. hexo-math插件"></a>1. hexo-math插件</h4><p>详见</p>
+<p>https://github.com/fluid-dev/hexo-theme-fluid</p>
+<h3 id="使用latex">使用Latex</h3>
+<p>由于多个Math插件不共存，安装确保只安装一种，也就是说仅采取下面一种方式，如果切换实现方式需要卸载就的math插件安装新插件：</p>
+<h4 id="hexo-math插件">1. hexo-math插件</h4>
+<p>详见https://github.com/hexojs/hexo-math</p>
 <p>安装插件</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">$ npm install hexo-math --save<br></code></pre></td></tr></table></figure>
-
 <p>在blog文件夹中执行：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">$ hexo math install<br></code></pre></td></tr></table></figure>
-
-<p>在<strong>Desktop&#x2F;Blog&#x2F;_config.yml</strong>文件中添加：</p>
+<p>在**Desktop/Blog/_config.yml**文件中添加：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs mac">plugins:<br>- hexo-math<br></code></pre></td></tr></table></figure>
-
 <p><strong>示例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs mac">&#123;% mathjax %&#125;<br>\frac&#123;1&#125;&#123;x^2-1&#125;<br>&#123;% endmathjax %&#125;<br></code></pre></td></tr></table></figure>
+<mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -1.814ex;" xmlns="http://www.w3.org/2000/svg" width="7.174ex" height="4.851ex" role="img" focusable="false" viewbox="0 -1342 3171 2143.9" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-1-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/><path id="MJX-1-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/><path id="MJX-1-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/><path id="MJX-1-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mn" transform="translate(1335.5,676)"><use data-c="31" xlink:href="#MJX-1-TEX-N-31"/></g><g data-mml-node="mrow" transform="translate(220,-719.9)"><g data-mml-node="msup"><g data-mml-node="mi"><use data-c="1D465" xlink:href="#MJX-1-TEX-I-1D465"/></g><g data-mml-node="mn" transform="translate(605,289) scale(0.707)"><use data-c="32" xlink:href="#MJX-1-TEX-N-32"/></g></g><g data-mml-node="mo" transform="translate(1230.8,0)"><use data-c="2212" xlink:href="#MJX-1-TEX-N-2212"/></g><g data-mml-node="mn" transform="translate(2231,0)"><use data-c="31" xlink:href="#MJX-1-TEX-N-31"/></g></g><rect width="2931" height="60" x="120" y="220"/></g></g></g></svg></mjx-container>
 <p>SE:<code>$i\hbar|\psi(t)\rangle=\hat H|\psi(t)\rangle$</code></p>
 <p>SE:<code>$$i\hbar|\psi(t)\rangle=\hat H|\psi(t)\rangle$$</code></p>
-<p>SE:$i\hbar|\psi(t)\rangle&#x3D;\hat H|\psi(t)\rangle$</p>
-<p>SE:$$i\hbar|\psi(t)\rangle&#x3D;\hat H|\psi(t)\rangle$$</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">This equation &#123;&amp;#37; math i\hbar|\psi(t)\rangle=\hat H|\psi(t)\rangle %&#125; is inline.<br></code></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs mac">&#123;&amp;#37; math_block %&#125;<br>\begin&#123;aligned&#125;<br>i\hbar|\psi(t)\rangle=\hat H|\psi(t)\rangle \\<br>i\hbar|\psi(t)\rangle=\hat H|\psi(t)\rangle<br>\end&#123;aligned&#125;<br>&#123;&amp;#37; endmath_block %&#125;<br></code></pre></td></tr></table></figure>
-
-<p>This equation {&amp;#37; math i\hbar|\psi(t)\rangle&#x3D;\hat H|\psi(t)\rangle %} is inline.</p>
-<p>{&amp;#37; math_block %}<br>\begin{aligned}<br>i\hbar|\psi(t)\rangle&#x3D;\hat H|\psi(t)\rangle \<br>i\hbar|\psi(t)\rangle&#x3D;\hat H|\psi(t)\rangle<br>\end{aligned}<br>{&amp;#37; endmath_block %}</p>
-<h4 id="2-使用主题自带Latex功能"><a href="#2-使用主题自带Latex功能" class="headerlink" title="2. 使用主题自带Latex功能"></a>2. 使用主题自带Latex功能</h4><p>以Fluid主题为例，详见用户指南中Latex公式部分：</p>
-<p><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/">https://hexo.fluid-dev.com/docs/guide/</a></p>
-<h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3><ol>
-<li>在&#x2F;Desktop&#x2F;Blog&#x2F;source中创建图片文件夹，通过语法插入：</li>
+<p>SE:<span class="math inline">\(i\hbar|\psi(t)\rangle=\hat H|\psi(t)\rangle\)</span></p>
+<p>SE:<span class="math display">\[i\hbar|\psi(t)\rangle=\hat H|\psi(t)\rangle\]</span></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs mac">&#123;% mathjax %&#125;<br>\begin&#123;aligned&#125;<br>i\hbar|\psi(t)\rangle=\hat H|\psi(t)\rangle \\<br>i\hbar|\psi(t)\rangle=\hat H|\psi(t)\rangle<br>\end&#123;aligned&#125;<br>&#123;% endmathjax %&#125;<br></code></pre></td></tr></table></figure>
+<mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -2.717ex;" xmlns="http://www.w3.org/2000/svg" width="18.196ex" height="6.566ex" role="img" focusable="false" viewbox="0 -1701 8042.6 2902" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-1-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"/><path id="MJX-1-TEX-V-210F" d="M182 599Q182 611 174 615T133 619Q118 619 114 621T109 630Q109 636 114 656T122 681Q125 685 202 688Q272 695 286 695Q304 695 304 684Q304 682 295 644T282 597Q282 592 360 592H399Q430 592 445 587T460 563Q460 552 451 541L442 535H266L251 468Q247 453 243 436T236 409T233 399Q233 395 244 404Q295 441 357 441Q405 441 445 417T485 333Q485 284 449 178T412 58T426 44Q447 44 466 68Q485 87 500 130L509 152H531H543Q562 152 562 144Q562 128 546 93T494 23T415 -13Q385 -13 359 3T322 44Q318 52 318 77Q318 99 352 196T386 337Q386 386 346 386Q318 386 286 370Q267 361 245 338T211 292Q207 287 193 235T162 113T138 21Q128 7 122 4Q105 -12 83 -12Q66 -12 54 -2T42 26L166 530Q166 534 161 534T129 535Q127 535 122 535T112 534Q74 534 74 562Q74 570 77 576T84 585T96 589T109 591T124 592T138 592L182 595V599Z"/><path id="MJX-1-TEX-N-7C" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"/><path id="MJX-1-TEX-I-1D713" d="M161 441Q202 441 226 417T250 358Q250 338 218 252T187 127Q190 85 214 61Q235 43 257 37Q275 29 288 29H289L371 360Q455 691 456 692Q459 694 472 694Q492 694 492 687Q492 678 411 356Q329 28 329 27T335 26Q421 26 498 114T576 278Q576 302 568 319T550 343T532 361T524 384Q524 405 541 424T583 443Q602 443 618 425T634 366Q634 337 623 288T605 220Q573 125 492 57T329 -11H319L296 -104Q272 -198 272 -199Q270 -205 252 -205H239Q233 -199 233 -197Q233 -192 256 -102T279 -9Q272 -8 265 -8Q106 14 106 139Q106 174 139 264T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Q21 299 34 333T82 404T161 441Z"/><path id="MJX-1-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/><path id="MJX-1-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"/><path id="MJX-1-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/><path id="MJX-1-TEX-N-27E9" d="M55 732Q56 739 61 744T75 750Q85 750 92 740Q95 733 186 494T278 250T187 6T92 -240Q85 -250 75 -250Q67 -250 62 -245T55 -232Q55 -227 145 11Q236 248 236 250T145 489Q55 727 55 732Z"/><path id="MJX-1-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/><path id="MJX-1-TEX-I-1D43B" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 219 683Q260 681 355 681Q389 681 418 681T463 682T483 682Q499 682 499 672Q499 670 497 658Q492 641 487 638H485Q483 638 480 638T473 638T464 637T455 637Q416 636 405 634T387 623Q384 619 355 500Q348 474 340 442T328 395L324 380Q324 378 469 378H614L615 381Q615 384 646 504Q674 619 674 627T617 637Q594 637 587 639T580 648Q580 650 582 660Q586 677 588 679T604 682Q609 682 646 681T740 680Q802 680 835 681T871 682Q888 682 888 672Q888 645 876 638H874Q872 638 869 638T862 638T853 637T844 637Q805 636 794 634T776 623Q773 618 704 340T634 58Q634 51 638 51Q646 48 692 46H723Q729 38 729 37T726 19Q722 6 716 0H701Q664 2 567 2Q533 2 504 2T458 2T437 1Q420 1 420 10Q420 15 423 24Q428 43 433 45Q437 46 448 46H454Q481 46 514 49Q520 50 522 50T528 55T534 64T540 82T547 110T558 153Q565 181 569 198Q602 330 602 331T457 332H312L279 197Q245 63 245 58Q245 51 253 49T303 46H334Q340 38 340 37T337 19Q333 6 327 0H312Q275 2 178 2Q144 2 115 2T69 2T48 1Q31 1 31 10Q31 12 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"/><path id="MJX-1-TEX-N-5E" d="M112 560L249 694L257 686Q387 562 387 560L361 531Q359 532 303 581L250 627L195 580Q182 569 169 557T148 538L140 532Q138 530 125 546L112 560Z"/></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtable"><g data-mml-node="mtr" transform="translate(0,650)"><g data-mml-node="mtd"><g data-mml-node="mi"><use data-c="1D456" xlink:href="#MJX-1-TEX-I-1D456"/></g><g data-mml-node="mi" transform="translate(345,0)"><use data-c="210F" xlink:href="#MJX-1-TEX-V-210F"/></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(907,0)"><g data-mml-node="mo" transform="translate(0 -0.5)"><use data-c="7C" xlink:href="#MJX-1-TEX-N-7C"/></g></g><g data-mml-node="mi" transform="translate(1185,0)"><use data-c="1D713" xlink:href="#MJX-1-TEX-I-1D713"/></g><g data-mml-node="mo" transform="translate(1836,0)"><use data-c="28" xlink:href="#MJX-1-TEX-N-28"/></g><g data-mml-node="mi" transform="translate(2225,0)"><use data-c="1D461" xlink:href="#MJX-1-TEX-I-1D461"/></g><g data-mml-node="mo" transform="translate(2586,0)"><use data-c="29" xlink:href="#MJX-1-TEX-N-29"/></g><g data-mml-node="mo" transform="translate(2975,0)"><use data-c="27E9" xlink:href="#MJX-1-TEX-N-27E9"/></g><g data-mml-node="mo" transform="translate(3641.8,0)"><use data-c="3D" xlink:href="#MJX-1-TEX-N-3D"/></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(4697.6,0)"><g data-mml-node="mover"><g data-mml-node="mi"><use data-c="1D43B" xlink:href="#MJX-1-TEX-I-1D43B"/></g><g data-mml-node="mo" transform="translate(513.8,257) translate(-250 0)"><use data-c="5E" xlink:href="#MJX-1-TEX-N-5E"/></g></g></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(5585.6,0)"><g data-mml-node="mo" transform="translate(0 -0.5)"><use data-c="7C" xlink:href="#MJX-1-TEX-N-7C"/></g></g><g data-mml-node="mi" transform="translate(5863.6,0)"><use data-c="1D713" xlink:href="#MJX-1-TEX-I-1D713"/></g><g data-mml-node="mo" transform="translate(6514.6,0)"><use data-c="28" xlink:href="#MJX-1-TEX-N-28"/></g><g data-mml-node="mi" transform="translate(6903.6,0)"><use data-c="1D461" xlink:href="#MJX-1-TEX-I-1D461"/></g><g data-mml-node="mo" transform="translate(7264.6,0)"><use data-c="29" xlink:href="#MJX-1-TEX-N-29"/></g><g data-mml-node="mo" transform="translate(7653.6,0)"><use data-c="27E9" xlink:href="#MJX-1-TEX-N-27E9"/></g></g></g><g data-mml-node="mtr" transform="translate(0,-951)"><g data-mml-node="mtd"><g data-mml-node="mi"><use data-c="1D456" xlink:href="#MJX-1-TEX-I-1D456"/></g><g data-mml-node="mi" transform="translate(345,0)"><use data-c="210F" xlink:href="#MJX-1-TEX-V-210F"/></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(907,0)"><g data-mml-node="mo" transform="translate(0 -0.5)"><use data-c="7C" xlink:href="#MJX-1-TEX-N-7C"/></g></g><g data-mml-node="mi" transform="translate(1185,0)"><use data-c="1D713" xlink:href="#MJX-1-TEX-I-1D713"/></g><g data-mml-node="mo" transform="translate(1836,0)"><use data-c="28" xlink:href="#MJX-1-TEX-N-28"/></g><g data-mml-node="mi" transform="translate(2225,0)"><use data-c="1D461" xlink:href="#MJX-1-TEX-I-1D461"/></g><g data-mml-node="mo" transform="translate(2586,0)"><use data-c="29" xlink:href="#MJX-1-TEX-N-29"/></g><g data-mml-node="mo" transform="translate(2975,0)"><use data-c="27E9" xlink:href="#MJX-1-TEX-N-27E9"/></g><g data-mml-node="mo" transform="translate(3641.8,0)"><use data-c="3D" xlink:href="#MJX-1-TEX-N-3D"/></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(4697.6,0)"><g data-mml-node="mover"><g data-mml-node="mi"><use data-c="1D43B" xlink:href="#MJX-1-TEX-I-1D43B"/></g><g data-mml-node="mo" transform="translate(513.8,257) translate(-250 0)"><use data-c="5E" xlink:href="#MJX-1-TEX-N-5E"/></g></g></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(5585.6,0)"><g data-mml-node="mo" transform="translate(0 -0.5)"><use data-c="7C" xlink:href="#MJX-1-TEX-N-7C"/></g></g><g data-mml-node="mi" transform="translate(5863.6,0)"><use data-c="1D713" xlink:href="#MJX-1-TEX-I-1D713"/></g><g data-mml-node="mo" transform="translate(6514.6,0)"><use data-c="28" xlink:href="#MJX-1-TEX-N-28"/></g><g data-mml-node="mi" transform="translate(6903.6,0)"><use data-c="1D461" xlink:href="#MJX-1-TEX-I-1D461"/></g><g data-mml-node="mo" transform="translate(7264.6,0)"><use data-c="29" xlink:href="#MJX-1-TEX-N-29"/></g><g data-mml-node="mo" transform="translate(7653.6,0)"><use data-c="27E9" xlink:href="#MJX-1-TEX-N-27E9"/></g></g></g></g></g></g></svg></mjx-container>
+<h4 id="使用主题自带latex功能">2. 使用主题自带Latex功能</h4>
+<p>以Fluid主题为例，详见用户指南中Latex公式部分：</p>
+<p>https://hexo.fluid-dev.com/docs/guide/</p>
+<h3 id="插入图片">插入图片</h3>
+<ol type="1">
+<li>在/Desktop/Blog/source中创建图片文件夹，通过语法插入：</li>
 </ol>
 <p><code>![alt](/images/name.jpg)</code></p>
-<ol start="2">
-<li>在”_config.yml”中将以下代码由false改为true</li>
+<ol start="2" type="1">
+<li>在"_config.yml"中将以下代码由false改为true</li>
 </ol>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs mac">post_asset_folder: true<br>relative_link: true<br></code></pre></td></tr></table></figure>
-
-<p>注意将**”url:”**改为自己的仓库名</p>
+<p>注意将<strong>"url:"</strong>改为自己的仓库名</p>
 <p>之后创建文档时：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">hexo new post_name<br></code></pre></td></tr></table></figure>
-
 <p>可将每个文档生成同名文件夹，将图片放在对应同名文件夹中，由此可以直接引用</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">![描述](name.jpg)<br></code></pre></td></tr></table></figure>
-
 <p>以前的旧文档可手动创建同名文件夹。</p>
 <p>如果以上不行的话，便增加插件，在Blog目录下：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">npm install hexo-asset-image --save<br></code></pre></td></tr></table></figure>
-
 <p>打开配置文件_config.yml将 post_asset_folder，从false改成true</p>
-<p>打开Desktop&#x2F;Blog&#x2F;node_modules&#x2F;hexo-asset-image&#x2F;index.js</p>
+<p>打开Desktop/Blog/node_modules/hexo-asset-image/index.js</p>
 <p>将内容更换为下面的代码</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><code class="hljs mac">&#x27;use strict&#x27;;<br>var cheerio = require(&#x27;cheerio&#x27;);<br><br>// http://stackoverflow.com/questions/14480345/how-to-get-the-nth-occurrence-in-a-string<br>function getPosition(str, m, i) &#123;<br>  return str.split(m, i).join(m).length;<br>&#125;<br><br>var version = String(hexo.version).split(&#x27;.&#x27;);<br>hexo.extend.filter.register(&#x27;after_post_render&#x27;, function(data)&#123;<br>  var config = hexo.config;<br>  if(config.post_asset_folder)&#123;<br>        var link = data.permalink;<br>    if(version.length &gt; 0 &amp;&amp; Number(version[0]) == 3)<br>       var beginPos = getPosition(link, &#x27;/&#x27;, 1) + 1;<br>    else<br>       var beginPos = getPosition(link, &#x27;/&#x27;, 3) + 1;<br>    // In hexo 3.1.1, the permalink of &quot;about&quot; page is like &quot;.../about/index.html&quot;.<br>    var endPos = link.lastIndexOf(&#x27;/&#x27;) + 1;<br>    link = link.substring(beginPos, endPos);<br><br>    var toprocess = [&#x27;excerpt&#x27;, &#x27;more&#x27;, &#x27;content&#x27;];<br>    for(var i = 0; i &lt; toprocess.length; i++)&#123;<br>      var key = toprocess[i];<br> <br>      var $ = cheerio.load(data[key], &#123;<br>        ignoreWhitespace: false,<br>        xmlMode: false,<br>        lowerCaseTags: false,<br>        decodeEntities: false<br>      &#125;);<br><br>      $(&#x27;img&#x27;).each(function()&#123;<br>        if ($(this).attr(&#x27;src&#x27;))&#123;<br>            // For windows style path, we replace &#x27;\&#x27; to &#x27;/&#x27;.<br>            var src = $(this).attr(&#x27;src&#x27;).replace(&#x27;\\&#x27;, &#x27;/&#x27;);<br>            if(!/http[s]*.*|\/\/.*/.test(src) &amp;&amp;<br>               !/^\s*\//.test(src)) &#123;<br>              // For &quot;about&quot; page, the first part of &quot;src&quot; can&#x27;t be removed.<br>              // In addition, to support multi-level local directory.<br>              var linkArray = link.split(&#x27;/&#x27;).filter(function(elem)&#123;<br>                return elem != &#x27;&#x27;;<br>              &#125;);<br>              var srcArray = src.split(&#x27;/&#x27;).filter(function(elem)&#123;<br>                return elem != &#x27;&#x27; &amp;&amp; elem != &#x27;.&#x27;;<br>              &#125;);<br>              if(srcArray.length &gt; 1)<br>                srcArray.shift();<br>              src = srcArray.join(&#x27;/&#x27;);<br>              $(this).attr(&#x27;src&#x27;, config.root + link + src);<br>              console.info&amp;&amp;console.info(&quot;update link as:--&gt;&quot;+config.root + link + src);<br>            &#125;<br>        &#125;else&#123;<br>            console.info&amp;&amp;console.info(&quot;no src attr, skipped...&quot;);<br>            console.info&amp;&amp;console.info($(this));<br>        &#125;<br>      &#125;);<br>      data[key] = $.html();<br>    &#125;<br>  &#125;<br>&#125;);<br></code></pre></td></tr></table></figure>
-
-
-<p>链接：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/f72aaad7b852">https://www.jianshu.com/p/f72aaad7b852</a></p>
-<ol start="3">
+<p>链接：https://www.jianshu.com/p/f72aaad7b852</p>
+<ol start="3" type="1">
 <li>利用DNS云存储直接插入url</li>
 </ol>
-<h2 id="绑定个人域名"><a href="#绑定个人域名" class="headerlink" title="绑定个人域名"></a>绑定个人域名</h2><p>首先在域名服务商处申请一个域名。</p>
+<h2 id="绑定个人域名">绑定个人域名</h2>
+<p>首先在域名服务商处申请一个域名。</p>
 <p>国内：阿里云，腾讯云，华为云等</p>
 <p>国外：namesilo, name, namecheap等</p>
 <p>注意的是：</p>
-<ol>
-<li><p>国内域名需要通过实名认证，国外仅需填写部分信息就可。</p>
-</li>
-<li><p>如果自己想租用云服务器搭建，境外主机不需要备份，国内&#x2F;国外域名均可。</p>
-<p>境内主机必须要国内代理的域名，并且需要备案（备案较为繁琐）。</p>
-</li>
+<ol type="1">
+<li><p>国内域名需要通过实名认证，国外仅需填写部分信息就可。</p></li>
+<li><p>如果自己想租用云服务器搭建，境外主机不需要备份，国内/国外域名均可。</p>
+<p>境内主机必须要国内代理的域名，并且需要备案（备案较为繁琐）。</p></li>
 </ol>
-<p>我个人在namesilo代理注册：<a target="_blank" rel="noopener" href="https://www.namesilo.com./">https://www.namesilo.com。</a></p>
+<p>我个人在namesilo代理注册：https://www.namesilo.com。</p>
 <p>下面便利它为例子：</p>
-<p>购买教程为：<a target="_blank" rel="noopener" href="https://namesilo-china.com/">https://namesilo-china.com</a> ，其它网站购买也是类似的。</p>
+<p>购买教程为：https://namesilo-china.com ，其它网站购买也是类似的。</p>
 <p>注意要先注册账号，并且填写好个人信息后再去购买.确保右上角头像显示的信息是正确的</p>
-<p><img src="/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/3.png" srcset="/img/loading.gif" lazyload alt="fig3"></p>
+<figure>
+<img src="/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/3.png" srcset="/img/loading.gif" lazyload alt="fig3"><figcaption aria-hidden="true">fig3</figcaption>
+</figure>
 <p>购买完成后进入My Acount界面右上角点击Manage My Domains出先购买的域名</p>
 <p>点击右边的蓝色小球（下图红圈标出），配置DNS</p>
-<p><img src="/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/4.png" srcset="/img/loading.gif" lazyload alt="fig4"></p>
+<figure>
+<img src="/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/4.png" srcset="/img/loading.gif" lazyload alt="fig4"><figcaption aria-hidden="true">fig4</figcaption>
+</figure>
 <p>将已有的DNS信息全部删除，往下翻可以看到网站已经提供了Github的模版，直接点击Apply Template便可。使用模版前保证自己的DNS信息是空的。</p>
-<p><img src="/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/5.png" srcset="/img/loading.gif" lazyload alt="fig5"></p>
+<figure>
+<img src="/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/5.png" srcset="/img/loading.gif" lazyload alt="fig5"><figcaption aria-hidden="true">fig5</figcaption>
+</figure>
 <p>然后点击CNAME添加一条信息，只要输入www以及将地址改为你的GitHub个人网网站地址便可，地址为:username.github.io。具体见下图</p>
-<p><img src="/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/6.png" srcset="/img/loading.gif" lazyload alt="fig6"></p>
+<figure>
+<img src="/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/6.png" srcset="/img/loading.gif" lazyload alt="fig6"><figcaption aria-hidden="true">fig6</figcaption>
+</figure>
 <p>如果使用其它网站代理的却没有模版的可以手动输入，保证DNS信息除了最后一条地址改为自己的GIthub地址其它信息和上面一致。要注意的是前四条类型为A最后一条类型为CHAME。</p>
-<p>接着在自己Desktop&#x2F;Blog&#x2F;sourse文件夹中创建CNAME的无类型文件。打开后（可以用文本或者代码编辑器）输入你的域名（没有www.）比如我的便是xiangjichn.com。注意一定要没有类型，没有后缀名。我是利用VS code直接新建的文件。</p>
+<p>接着在自己Desktop/Blog/sourse文件夹中创建CNAME的无类型文件。打开后（可以用文本或者代码编辑器）输入你的域名（没有www.）比如我的便是xiangjichn.com。注意一定要没有类型，没有后缀名。我是利用VS code直接新建的文件。</p>
 <p>接着在终端Blog文件夹命令下输入：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs mac">hexo c<br>hexo g<br>hexo d<br></code></pre></td></tr></table></figure>
-
 <p>同步到Github上。</p>
 <p>进入GIthub自己的仓库，点击Settings-Pages。</p>
 <p>域名的解析需要一段时间，解析成功后可以看到Custom domain下为个人域名且DNS Check Sucessful。有的时候解析时间较长，会出现失败提示，等待域名解析成功后点击重新check便可。我大概解析了几分钟时间。之后会提示提示等待加载15min（第一次加载较长），耐心等待便可。</p>
 <p>之后便可以正常访问了，建议把下面的<strong>Enforce HTTPs</strong>选项打开这样采取加密数据包，更安全，打开网站也不容易出现危险提示。</p>
-<p><img src="/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/7.png" srcset="/img/loading.gif" lazyload alt="fig7"></p>
+<figure>
+<img src="/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/7.png" srcset="/img/loading.gif" lazyload alt="fig7"><figcaption aria-hidden="true">fig7</figcaption>
+</figure>
 <p>之后便可以直接在个人域名中访问自己网站了，哪怕是打开自己原来的仓库个人网页user.github.io也会跳转到这个域名上去。</p>
-<h1 id="一些操作总结"><a href="#一些操作总结" class="headerlink" title="一些操作总结"></a>一些操作总结</h1><h3 id="常用代码"><a href="#常用代码" class="headerlink" title="常用代码"></a>常用代码</h3><p>进入桌面Blog文件夹：</p>
-<p><code>  cd Desktop/Blog</code></p>
+<h1 id="一些操作总结">一些操作总结</h1>
+<h3 id="常用代码">常用代码</h3>
+<p>进入桌面Blog文件夹：</p>
+<p><code>cd Desktop/Blog</code></p>
 <p>清理：<code>hexo c</code></p>
-<p>生成：<code>hexo g</code> </p>
+<p>生成：<code>hexo g</code></p>
 <p>同步：<code>hexo d</code></p>
 <p>启动：<code>hexo s</code></p>
 <p>生成并同步：<code>hexo g -d</code></p>
 <p>进入博客网站，本地网址为</p>
-<p><a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a></p>
-<h3 id="发布新文章："><a href="#发布新文章：" class="headerlink" title="发布新文章："></a>发布新文章：</h3><p><code>hexo n&quot;文件名&quot;</code></p>
-<p>该操作会建立一新的md格式的文件，地址为Desktop&#x2F;Blog&#x2F;sourse&#x2F;_posts</p>
+<p>http://localhost:4000</p>
+<h3 id="发布新文章">发布新文章：</h3>
+<p><code>hexo n"文件名"</code></p>
+<p>该操作会建立一新的md格式的文件，地址为Desktop/Blog/sourse/_posts</p>
 <p>执行：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs mac">hexo c<br>hexo g -d<br></code></pre></td></tr></table></figure>
-
 <p>便可生成并更新到Gethub上</p>
 <p>过一小段时间在个人网址上便会同步</p>
 <p>或者进入本地网址查看</p>
 <p><code>hexo s</code></p>
-<p><a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a></p>
-<h1 id="hexo-Quick-Start-文档"><a href="#hexo-Quick-Start-文档" class="headerlink" title="hexo Quick Start 文档"></a>hexo Quick Start 文档</h1><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">$ hexo new &quot;My New Post&quot;<br></code></pre></td></tr></table></figure>
-
+<p>http://localhost:4000</p>
+<h1 id="hexo-quick-start-文档">hexo Quick Start 文档</h1>
+<h3 id="create-a-new-post">Create a new post</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">$ hexo new &quot;My New Post&quot;<br></code></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">$ hexo server<br></code></pre></td></tr></table></figure>
-
+<h3 id="run-server">Run server</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">$ hexo server<br></code></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">$ hexo generate<br></code></pre></td></tr></table></figure>
-
+<h3 id="generate-static-files">Generate static files</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">$ hexo generate<br></code></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
+<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">$ hexo deploy<br></code></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
                 
@@ -768,5 +877,20 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
