@@ -31,7 +31,7 @@
 <meta property="og:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/6.png">
 <meta property="og:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/7.png">
 <meta property="article:published_time" content="2022-08-29T00:04:16.000Z">
-<meta property="article:modified_time" content="2022-08-30T12:00:20.245Z">
+<meta property="article:modified_time" content="2022-08-31T02:30:08.754Z">
 <meta property="article:author" content="Xiang ji">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/1.png">
@@ -89,7 +89,11 @@
 
 
   
-<meta name="generator" content="Hexo 6.2.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.2.0"></head>
 
 
 <body>
@@ -226,7 +230,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          5.8k 字
+          6.9k 字
         
       </span>
     
@@ -237,7 +241,7 @@
         
         
         
-          49 分钟
+          58 分钟
         
       </span>
     
@@ -349,6 +353,30 @@
 <h3 id="使用主题"><a href="#使用主题" class="headerlink" title="使用主题"></a>使用主题</h3><p>可在这查找主题：**<a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes</a>**</p>
 <p>在这里我采用的是Fluid主题，使用方式见：</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">https://github.com/fluid-dev/hexo-theme-fluid</a></p>
+<h3 id="使用Latex"><a href="#使用Latex" class="headerlink" title="使用Latex"></a>使用Latex</h3><p>由于多个Math插件不共存，安装确保只安装一种，也就是说仅采取下面一种方式，如果切换实现方式需要卸载就的math插件安装新插件：</p>
+<h4 id="1-hexo-math插件"><a href="#1-hexo-math插件" class="headerlink" title="1. hexo-math插件"></a>1. hexo-math插件</h4><p>详见</p>
+<p>安装插件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">$ npm install hexo-math --save<br></code></pre></td></tr></table></figure>
+
+<p>在blog文件夹中执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">$ hexo math install<br></code></pre></td></tr></table></figure>
+
+<p>在<strong>Desktop&#x2F;Blog&#x2F;_config.yml</strong>文件中添加：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs mac">plugins:<br>- hexo-math<br></code></pre></td></tr></table></figure>
+
+<p><strong>示例：</strong></p>
+<p>SE:<code>$i\hbar|\psi(t)\rangle=\hat H|\psi(t)\rangle$</code></p>
+<p>SE:<code>$$i\hbar|\psi(t)\rangle=\hat H|\psi(t)\rangle$$</code></p>
+<p>SE:$i\hbar|\psi(t)\rangle&#x3D;\hat H|\psi(t)\rangle$</p>
+<p>SE:$$i\hbar|\psi(t)\rangle&#x3D;\hat H|\psi(t)\rangle$$</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">This equation &#123;&amp;#37; math i\hbar|\psi(t)\rangle=\hat H|\psi(t)\rangle %&#125; is inline.<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs mac">&#123;&amp;#37; math_block %&#125;<br>\begin&#123;aligned&#125;<br>i\hbar|\psi(t)\rangle=\hat H|\psi(t)\rangle \\<br>i\hbar|\psi(t)\rangle=\hat H|\psi(t)\rangle<br>\end&#123;aligned&#125;<br>&#123;&amp;#37; endmath_block %&#125;<br></code></pre></td></tr></table></figure>
+
+<p>This equation {&amp;#37; math i\hbar|\psi(t)\rangle&#x3D;\hat H|\psi(t)\rangle %} is inline.</p>
+<p>{&amp;#37; math_block %}<br>\begin{aligned}<br>i\hbar|\psi(t)\rangle&#x3D;\hat H|\psi(t)\rangle \<br>i\hbar|\psi(t)\rangle&#x3D;\hat H|\psi(t)\rangle<br>\end{aligned}<br>{&amp;#37; endmath_block %}</p>
+<h4 id="2-使用主题自带Latex功能"><a href="#2-使用主题自带Latex功能" class="headerlink" title="2. 使用主题自带Latex功能"></a>2. 使用主题自带Latex功能</h4><p>以Fluid主题为例，详见用户指南中Latex公式部分：</p>
+<p><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/">https://hexo.fluid-dev.com/docs/guide/</a></p>
 <h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3><ol>
 <li>在&#x2F;Desktop&#x2F;Blog&#x2F;source中创建图片文件夹，通过语法插入：</li>
 </ol>
@@ -409,7 +437,7 @@
 
 <p>同步到Github上。</p>
 <p>进入GIthub自己的仓库，点击Settings-Pages。</p>
-<p>域名的解析需要一段时间，解析成功后可以看到Custom domain下为个人域名且DNS Check Sucessful。有的时候解析时间较长，会出现失败提示，等待域名解析成功后点击重新check便可。我大概解析了几分钟时间。</p>
+<p>域名的解析需要一段时间，解析成功后可以看到Custom domain下为个人域名且DNS Check Sucessful。有的时候解析时间较长，会出现失败提示，等待域名解析成功后点击重新check便可。我大概解析了几分钟时间。之后会提示提示等待加载15min（第一次加载较长），耐心等待便可。</p>
 <p>之后便可以正常访问了，建议把下面的<strong>Enforce HTTPs</strong>选项打开这样采取加密数据包，更安全，打开网站也不容易出现危险提示。</p>
 <p><img src="/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/7.png" srcset="/img/loading.gif" lazyload alt="fig7"></p>
 <p>之后便可以直接在个人域名中访问自己网站了，哪怕是打开自己原来的仓库个人网页user.github.io也会跳转到这个域名上去。</p>
