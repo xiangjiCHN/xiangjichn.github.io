@@ -23,6 +23,8 @@
 <meta property="og:site_name" content="Xiang Ji&#39;s Blog">
 <meta property="og:description" content="记载博客的搭建，使用Hexo+Github 详细流程 配置环境 以下环境依次安装 需按顺序在终端中安装，homebrew要提前装好，一般为在终端输入： 1&#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;HEAD&#x2F;install.sh)&quot; 更详细见官网：https:&#x2F;&#x2F;brew.sh ，或者寻">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/1c.png">
+<meta property="og:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/1a.png">
 <meta property="og:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/1.png">
 <meta property="og:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/2.png">
 <meta property="og:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/3.png">
@@ -31,10 +33,10 @@
 <meta property="og:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/6.png">
 <meta property="og:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/7.png">
 <meta property="article:published_time" content="2022-08-29T00:04:16.000Z">
-<meta property="article:modified_time" content="2022-08-31T07:08:01.344Z">
+<meta property="article:modified_time" content="2022-09-04T07:41:47.863Z">
 <meta property="article:author" content="Xiang ji">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/1.png">
+<meta name="twitter:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/1c.png">
   
   
   
@@ -76,7 +78,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"xiangjichn.githut.io","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":100,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"xiangjichn.githut.io","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":120,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -338,7 +340,7 @@ mjx-container[display="true"] + br {
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          6.6k 字
+          6.9k 字
         
       </span>
     
@@ -349,7 +351,7 @@ mjx-container[display="true"] + br {
         
         
         
-          56 分钟
+          58 分钟
         
       </span>
     
@@ -406,23 +408,34 @@ mjx-container[display="true"] + br {
 <p>3:安装hexo</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">npm install -g hexo-cli<br></code></pre></td></tr></table></figure>
 <h2 id="搭建博客">搭建博客</h2>
-<p>桌面新建文件夹 Blog</p>
+<p>桌面新建文件夹 Blog。(由于我已经建过，因此建个BlogCN做演示)</p>
+<figure>
+<img src="/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/1c.png" srcset="/img/loading.gif" lazyload alt="新建文件夹"><figcaption aria-hidden="true">新建文件夹</figcaption>
+</figure>
 <p>进入blog文件夹：<code>cd Desktop/Blog</code></p>
-<p>初始化：<code>hexo init</code></p>
+<p>初始化并安装hexo：<code>hexo init</code></p>
 <p>启动hexo：<code>hexo s</code> (<code>hero start</code>简写)</p>
 <p>进入博客的默认网站：<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a></p>
 <p>可以见到已经默认生成了一篇博文</p>
+<p><img src="/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/1a.png" srcset="/img/loading.gif" lazyload></p>
 <p>新建一篇博文，终端输）：<code>hexo n "发布第一篇个人博客"</code> （<code>hexo new</code>简写）</p>
 <p>此时在Desktop/Blog/sourse/_posts 文件夹下可以看到刚刚建立的<strong>"发布第一篇个人博客.md"</strong>的文件</p>
-<p>利用Markdown编辑器可以对内容进行更改，比如输入：内容测试</p>
+<p>利用Markdown编辑器可以对内容进行更改，比如文件中输入：内容测试。</p>
+<p>终端中<strong>ctrl+c，退出命令</strong>，退出后默认会依然<strong>在Blog目录下</strong>。</p>
 <p>终端在在Blog文件下输入：</p>
 <p>清理：<code>hexo c</code> (<code>hexo clean</code>) 生成：<code>hexo g</code> (<code>hexo generate</code>) 启动：<code>hexo s</code> (<code>hero start</code>)</p>
+<p>可以进入本地网站http://localhost:4000看到多了篇博文。</p>
+<h2 id="使用主题">使用主题</h2>
+<p>可在这查找主题：<strong><a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes</a></strong></p>
+<p>在这里我采用的是Fluid主题，使用方式见：</p>
+<p>https://github.com/fluid-dev/hexo-theme-fluid</p>
 <h2 id="与github同步">与Github同步</h2>
+<p>GIghub使用更为方便，但是在国内访问不变。并且使用Gitgub pages托管静态网站不会被百度检索（Github拒绝百度爬虫）。有需要被百度推广的可以使用国内的Gitee或者Coding托管静态网站，或者自己租服务器搭建网站（暂不讨论这条）。</p>
 <p>1:新建或登录github账号：<a target="_blank" rel="noopener" href="https://github.com/">https://github.com</a></p>
 <p>2:新创建一个仓库New repository，<strong>仓库名必须为：<code>昵称.github.io</code></strong>（昵称中有大写字母要全部改为小写）</p>
 <p>，（可选：输入描述），<strong>选择类型为：Public</strong></p>
 <ol start="3" type="1">
-<li><p>终端中<strong>ctrl+c，退出命令</strong>，退出后默认会依然<strong>在Blog目录下</strong>。在目录下安装git部署插件</p>
+<li><p>在目录下安装git部署插件</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mac">npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure></li>
 <li><p>进入Blog文件夹，找到**“_config.yml”**文件并打开，做如下修改：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs mac"># Deployment<br>## Docs: https://hexo.io/docs/deployment.html<br>deploy:<br>  type: git<br>  repo: https://github.com/username1/username2.github.io.git<br>  branch: master<br></code></pre></td></tr></table></figure></li>
@@ -454,10 +467,6 @@ mjx-container[display="true"] + br {
 <figure>
 <img src="/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/2.png" srcset="/img/loading.gif" lazyload alt="fig2"><figcaption aria-hidden="true">fig2</figcaption>
 </figure>
-<h2 id="使用主题">使用主题</h2>
-<p>可在这查找主题：<strong><a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes</a></strong></p>
-<p>在这里我采用的是Fluid主题，使用方式见：</p>
-<p>https://github.com/fluid-dev/hexo-theme-fluid</p>
 <h2 id="支持latex">支持Latex</h2>
 <p>由于多个Math插件不共存，安装确保只安装一种，也就是说仅采取下面一种方式，如果切换实现方式需要卸载就的math插件安装新插件：</p>
 <h4 id="hexo-filter-mathjax-hexo-renderer-pandoc">1.hexo-filter-mathjax + hexo-renderer-pandoc</h4>
@@ -520,6 +529,7 @@ mjx-container[display="true"] + br {
 <li><p>国内域名需要通过实名认证，国外仅需填写部分信息就可。</p></li>
 <li><p>如果自己想租用云服务器搭建，境外主机不需要备份，国内/国外域名均可。</p>
 <p>境内主机必须要国内代理的域名，并且需要备案（备案较为繁琐）。</p></li>
+<li><p>境外域名有概率被墙（百度，必应国内版搜不到，谷歌/必应国际版可以搜索到）。</p></li>
 </ol>
 <p>我个人在namesilo代理注册：https://www.namesilo.com。</p>
 <p>下面便利它为例子：</p>
@@ -883,5 +893,20 @@ mjx-container[display="true"] + br {
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
