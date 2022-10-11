@@ -16,12 +16,12 @@
   <meta name="author" content="Xiang ji">
   <meta name="keywords" content="">
   
-    <meta name="description" content="记载博客的搭建，使用Hexo+Github。 详细流程 配置环境 以下环境依次安装 需按顺序在终端中安装，homebrew要提前装好，一般为在终端输入： 1&#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;HEAD&#x2F;install.sh)&quot; 更详细见官网：https:&#x2F;&#x2F;brew.sh ，或者">
+    <meta name="description" content="记载博客的搭建，使用Hexo+Github。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="个人博客搭建（mac）">
 <meta property="og:url" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/index.html">
 <meta property="og:site_name" content="Xiang Ji&#39;s Blog">
-<meta property="og:description" content="记载博客的搭建，使用Hexo+Github。 详细流程 配置环境 以下环境依次安装 需按顺序在终端中安装，homebrew要提前装好，一般为在终端输入： 1&#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;HEAD&#x2F;install.sh)&quot; 更详细见官网：https:&#x2F;&#x2F;brew.sh ，或者">
+<meta property="og:description" content="记载博客的搭建，使用Hexo+Github。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/1c.png">
 <meta property="og:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/1a.png">
@@ -33,7 +33,7 @@
 <meta property="og:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/6.png">
 <meta property="og:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/7.png">
 <meta property="article:published_time" content="2022-08-29T00:04:16.000Z">
-<meta property="article:modified_time" content="2022-09-30T09:43:26.024Z">
+<meta property="article:modified_time" content="2022-10-11T08:01:15.856Z">
 <meta property="article:author" content="Xiang ji">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://xiangjichn.githut.io/2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/1c.png">
@@ -399,6 +399,7 @@ mjx-container[display="true"] + br {
               <div class="markdown-body">
                 
                 <p>记载博客的搭建，使用Hexo+Github。</p>
+<span id="more"></span>
 <h1 id="详细流程">详细流程</h1>
 <h2 id="配置环境">配置环境</h2>
 <p><strong>以下环境依次安装</strong></p>
@@ -908,5 +909,20 @@ mjx-container[display="true"] + br {
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

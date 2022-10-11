@@ -347,7 +347,7 @@ mjx-container[display="true"] + br {
       
       <a class="index-excerpt index-excerpt__noimg" href="2022/10/09/MathJax%E7%AC%94%E8%AE%B0/" target="_self">
         <div>
-          注意事项 hexo会将\\转化为\, 因此使用\\作为换行符时会产生bug。 我们采用\begin{split}\end{split}的方式写多行公式。并且涉及到\left. \right.的时候也需要用这个避免bug 字体Font 斜体斜体黑板体德体思源字体粗体，矢量粗体罗马字体花体打印体 矩阵Matrix  无框 (matrix环境，&amp;连接行，\\连接列&#x2F;新的一行)(可以用…,在spl
+          （更新中） 个人在hexo中使用的Latex用的是mathjax，利用pandoc转译。可能有一些latex的不支持和冲突。在此记录一些hexo中使用mathjax的笔记。
         </div>
       </a>
 
@@ -380,7 +380,7 @@ mjx-container[display="true"] + br {
       
       <a class="index-excerpt index-excerpt__noimg" href="2022/10/08/Rabi%E6%8C%AF%E8%8D%A1/" target="_self">
         <div>
-          两能级系统的Rabi振荡 （更新中） 具有耦合的而能级系统 考虑两能级原子，其具有两个能态, 为原子基态对应能量，为原子激发态对应能量。 两能级间的耦合强度用一个泛指的V代表（V可以是任何形式，不一定是常数）。 哈密顿量可以表示为矩阵形式：  一个简单的而能级系统是电子的自旋在磁场下运动。 我们定义：  平均能量: 能级间隔: 等效磁场矢量:  哈密顿量可以改写为：  单位矩阵相乘常数项对物理图像
+          （更新中） 两能级系统到两带系统的rabi振荡。
         </div>
       </a>
 
@@ -446,7 +446,7 @@ mjx-container[display="true"] + br {
       
       <a class="index-excerpt index-excerpt__noimg" href="2022/08/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(mac)/" target="_self">
         <div>
-          记载博客的搭建，使用Hexo+Github。 详细流程 配置环境 以下环境依次安装 需按顺序在终端中安装，homebrew要提前装好，一般为在终端输入： 1&#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;HEAD&#x2F;install.sh)&quot; 更详细见官网：https:&#x2F;&#x2F;brew.sh ，或者
+          记载博客的搭建，使用Hexo+Github。
         </div>
       </a>
 
@@ -584,5 +584,20 @@ mjx-container[display="true"] + br {
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
